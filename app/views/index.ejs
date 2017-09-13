@@ -2,12 +2,12 @@
 
   <h1><%-title %></h1>
   <p>Welcome to <%-title %></p>
-  <div class="test_form">
+  <form class="test_form" method="post" action="/">
   	<p>Login</p>
-  	<input id="login" class="login"></input>
+  	<input id="login" class="login" name="login"></input>
   	<p>Password</p>
-  	<input id="password" class="password"></input>
-  	<button id="submitFormButton" name="submit">Check</button>
-  </div>
+  	<input id="password" class="password" name="password"></input>
+  	<button id="submitFormButton" type="submit" name="submit">Check</button>
+  </form>
 
 <% include footer %>
